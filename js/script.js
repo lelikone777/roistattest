@@ -13,7 +13,7 @@ let phoneValid = false;
 let checkboxValid = false;
 let isFormSubmitted = false;
 
-button.setAttribute('disabled', 'disabled');
+// button.setAttribute('disabled', 'disabled');
 
 name.addEventListener('input', () => {
   if (name.value.trim() !== '') {
