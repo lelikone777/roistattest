@@ -11,7 +11,7 @@ const returnToForm = document.getElementById('returnToForm');
 
 let isFormSubmitted = false;
 
-button.setAttribute('disabled', 'disabled');
+// button.setAttribute('disabled', 'disabled');
 
 nameInput.addEventListener('input', () => {
   updateFormValidity();
