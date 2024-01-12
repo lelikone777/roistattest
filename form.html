@@ -12,35 +12,36 @@
     <title>Form</title>
 </head>
 <body>
-    <div class="thank-you hidden">
-        <h2>Спасибо за регистрацию!</h2>
-        <p class="thank-you__text">Ваши данные успешно отправлены. <br> Пожалуйста, проверьте информацию ниже:</p>
-        <div class="thank-you__data" id="submittedData"></div>
-        <button type="button" id="returnToForm">Вернуться к форме</button>
+<div class="thank-you hidden">
+    <h2>Спасибо за регистрацию!</h2>
+    <p class="thank-you__text">Ваши данные успешно отправлены. <br> Пожалуйста, проверьте информацию ниже:</p>
+    <div class="thank-you__data" id="submittedData"></div>
+    <button type="button" id="returnToForm">Вернуться к форме</button>
+</div>
+
+<form id="registrationForm" action="" method="post">
+    <div class="header">
+        <h1>Регистрация</h1>
+        <button type="button" class="header__close"></button>
     </div>
-    <form id="registrationForm" action="" method="post">
-        <div class="header">
-            <h1>Регистрация</h1>
-            <button type="button" class="header__close"></button>
-        </div>
-        <div class="inputs">
-            <label for="name">*пожалуйста, используйте только буквы в поле "Имя"</label>
-            <input type="text" id="name" name="name" placeholder="Имя">
-            <label for="site"></label>
-            <input type="text" id="site" name="site" placeholder="Сайт компании">
-            <label for="phone">*введите корректный телефон (пример: 7 900 000 00 00)</label>
-            <input type="text" id="phone" name="phone" placeholder="Телефон">
-        </div>
-        <button id="submitForm" type="submit">Получить код</button>
-        <label for="checkbox" class="terms">
-            <input type="checkbox" id="checkbox" name="checkbox" class="checkbox">
-            <span>
-                <img src="img/checkbox.svg" alt="check">
-            </span>
-            <p>Отправляя сведения через электронную форму, вы даете согласие на обработку персональных данных, в том числе сбор, хранение и передачу третьим лицам представленной вами информации на условиях
-                <a target="_blank" href="https://roistat.com/ru/privacy">Политики обработки персональных данных</a>.</p>
-        </label>
-    </form>
+    <div class="inputs">
+        <label for="name">*пожалуйста, используйте только буквы в поле "Имя"</label>
+        <input type="text" id="name" name="name" placeholder="Имя">
+        <label for="site"></label>
+        <input type="text" id="site" name="site" placeholder="Сайт компании">
+        <label for="phone">*введите корректный телефон (пример: 7 900 000 00 00)</label>
+        <input type="text" id="phone" name="phone" placeholder="Телефон">
+    </div>
+    <button id="submitForm" type="submit">Получить код</button>
+    <label for="checkbox" class="terms">
+        <input type="checkbox" id="checkbox" name="checkbox" class="checkbox">
+        <span>
+            <img src="img/checkbox.svg" alt="check">
+        </span>
+        <p>Отправляя сведения через электронную форму, вы даете согласие на обработку персональных данных, в том числе сбор, хранение и передачу третьим лицам представленной вами информации на условиях
+            <a target="_blank" href="https://roistat.com/ru/privacy">Политики обработки персональных данных</a>.</p>
+    </label>
+</form>
 <script src="js/form.js"></script>
 </body>
 </html>
